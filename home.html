@@ -5,17 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="home.css">
+    <script type="text/javascript" src="AU.js"></script>
     <title>Adoção de Animais</title>
 </head>
-<body>
+<body onload="atualizarMenu()">
     <header>
         <h1>Adote um Animal</h1>
         <nav>
-            <ul>
+            <ul id="menu">
+                <li><a href="home.html">Início</a></li>
+                <li><a href="grid.html">Adotar</a></li>
+                <li><a href="sobre.html" >Sobre Nós</a></li>
+                <li><a href="#.html" onclick='logar()' >Login</a></li>
+            </ul>
+            <ul class="inv" id="logmenu">
                 <li><a href="home.html">Início</a></li>
                 <li><a href="grid.html">Adotar</a></li>
                 <li><a href="sobre.html">Sobre Nós</a></li>
-                <li><a href="login.html">Login</a></li>
+                <li><a href="relatorio.html">relatorio</a></li> 
+                <li><a onclick='deslogar()'>deslogar</a></li> 
             </ul>
             <nav class="social">
                 <ul>
