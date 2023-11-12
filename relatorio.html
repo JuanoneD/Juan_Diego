@@ -6,17 +6,29 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="relatorio.css">
     <link rel="stylesheet" href="global.css">
+    <script type="text/javascript" src="AU.js"></script>
     <title>Adoção de Animais</title>
 </head>
 <body>
+    <!---
+        Estrutura de "if" utilizada para simular situação caso existice um sistema funcional de login
+        função utizada pra isso e alteração de css
+    -->
     <header>
         <h1>Adote um Animal</h1>
         <nav>
-            <ul>
+            <ul id="menu">
+                <li><a href="home.html">Início</a></li>
+                <li><a href="grid.html">Adotar</a></li>
+                <li><a href="sobre.html" >Sobre Nós</a></li>
+                <li><a href="#.html" onclick='logar()' >Login</a></li>
+            </ul>
+            <ul class="inv" id="logmenu">
                 <li><a href="home.html">Início</a></li>
                 <li><a href="grid.html">Adotar</a></li>
                 <li><a href="sobre.html">Sobre Nós</a></li>
-                <li><a href="login.html">Login</a></li>
+                <li><a href="relatorio.html">relatorio</a></li> 
+                <li><a href="#"  onclick='deslogar()'>deslogar</a></li> 
             </ul>
             <nav class="social">
                 <ul>
@@ -35,7 +47,7 @@
             <div class="mano">
                 <div class="bloco">
                     <h3 class="titulo">Usuarios cadastrados</h3>
-                    <table class="tabela" >
+                    <table class="tabela" id="tabela1">
                         <tr>
                             <td colspan="5">
                                 <form>
