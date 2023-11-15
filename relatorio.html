@@ -13,6 +13,7 @@
     <!---
         Estrutura de "if" utilizada para simular situação caso existice um sistema funcional de login
         função utizada pra isso e alteração de css
+        for utilizado para colocar mais dados na tabela
     -->
     <header>
         <h1>Adote um Animal</h1>
@@ -47,7 +48,7 @@
             <div class="mano">
                 <div class="bloco">
                     <h3 class="titulo">Usuarios cadastrados</h3>
-                    <table class="tabela" id="tabela1">
+                    <table class="tabela" id="minhaTabela">
                         <tr>
                             <td colspan="5">
                                 <form>
@@ -103,7 +104,10 @@
                                     <a href="#"><img src="src/ex.png" height="20px"></a>
                             </td>
                         </tr>
+                        <div id="tbody">
+                        </div>
                     </table>
+                    <button onclick='preencherTabela()' >Carregar mais</button>
                 </div>
                 <div class="bloco">
                     <h3 class="titulo">Animais cadastrados</h3>
@@ -168,6 +172,7 @@
             </div>
         </div>
     </main>
+
     <footer>
         <p>&copy; 2023 Pata Amiga</p>
     </footer>
